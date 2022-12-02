@@ -1,0 +1,43 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.18.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "one-piece-theories",
+  "version": "1.0.0",
+  "description": "An app where people can share one piece theories.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkkrsingh877/one-piece-theories.git"
+  },
+  "keywords": [
+    "One",
+    "Piece",
+    "Luffy",
+    "Zoro",
+    "Nami",
+    "Ussop",
+    "Franky",
+    "Brook",
+    "Jimbei",
+    "Robin",
+    "Chopper",
+    "Yamato"
+  ],
+  "author": "Prabhat Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pkkrsingh877/one-piece-theories/issues"
+  },
+  "homepage": "https://github.com/pkkrsingh877/one-piece-theories#readme"
+}
