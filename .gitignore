@@ -11,3 +11,7 @@ public/media/
 
 public/robots.txt
 public/sitemap*.xml
+
+# Other important files
+
+src/mangatheories.json

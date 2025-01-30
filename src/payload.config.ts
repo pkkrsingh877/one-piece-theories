@@ -1,5 +1,6 @@
 // storage-adapter-import-placeholder
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
+import { gcsStorage } from '@payloadcms/storage-gcs'
 
 import sharp from 'sharp' // sharp-import
 import path from 'path'
@@ -68,6 +69,17 @@ export default buildConfig({
   plugins: [
     ...plugins,
     // storage-adapter-placeholder
+        gcsStorage({
+        collections: {
+          media: true,
+        },
+        bucket: process.env.GCS_BUCKET!,
+        options: {
+          apiEndpoint: process.env.GCS_ENDPOINT,
+          projectId: process.env.GCS_PROJECT_ID,
+          keyFilename: path.resolve(dirname, './mangatheories.json'),
+        },
+      }),
   ],
   secret: process.env.PAYLOAD_SECRET,
   sharp,
